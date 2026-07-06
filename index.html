@@ -576,7 +576,7 @@
             
             const bClem = document.getElementById('btn-clemencia');
             bClem.classList.toggle('hidden', win);
-            if(!win) bClem.innerHTML = `🏛️ Sobornar al César (15,000 HS)`;
+            if(!win) bClem.innerHTML = `🏛️ Clemencia al César (15,000 HS)`;
 
             document.getElementById('final-prestigio').textContent = estado.prestigio + '%';
             document.getElementById('final-estabilidad').textContent = estado.estabilidad + '%';
@@ -594,7 +594,7 @@
                 document.getElementById('pantalla-juego').classList.remove('hidden');
                 document.getElementById('panel-recursos').classList.remove('hidden');
                 playSound('success');
-                mostrarAlertaImperial("¡El Emperador Trajano ha aceptado tu generoso soborno de 15,000 HS! Tu condena queda revocada.");
+                mostrarAlertaImperial("¡El Emperador Trajano ha aceptado tu generoso aporte al Imperio de 15,000 HS! Tu condena queda revocada.");
                 agregarBitacora(historia[estado.nodoActual].capitulo, "🏛️ Soborno Imperial pagado (15,000 HS).");
             } else {
                 estado.presupuesto = 3000; estado.prestigio = 10; estado.estabilidad = Math.max(estado.estabilidad, 50); estado.plazo = Math.max(estado.plazo, 4);
